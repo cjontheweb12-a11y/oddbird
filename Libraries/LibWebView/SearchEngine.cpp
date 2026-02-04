@@ -10,16 +10,14 @@
 namespace WebView {
 
 static auto s_builtin_search_engines = to_array<SearchEngine>({
-    { "Bing"_string, "https://www.bing.com/search?q=%s"_string },
-    { "Brave"_string, "https://search.brave.com/search?q=%s"_string },
-    { "DuckDuckGo"_string, "https://duckduckgo.com/?q=%s"_string },
+    { "GOOD Search"_string, "https://good-search.org/en/?q=%s"_string },
     { "Ecosia"_string, "https://ecosia.org/search?q=%s"_string },
-    { "Google"_string, "https://www.google.com/search?q=%s"_string },
+ { "DuckDuckGo"_string, "https://duckduckgo.com/?q=%s"_string },
     { "Kagi"_string, "https://kagi.com/search?q=%s"_string },
     { "Mojeek"_string, "https://www.mojeek.com/search?q=%s"_string },
     { "Startpage"_string, "https://startpage.com/search?q=%s"_string },
-    { "Yahoo"_string, "https://search.yahoo.com/search?p=%s"_string },
-    { "Yandex"_string, "https://yandex.com/search/?text=%s"_string },
+  
+   
 });
 
 ReadonlySpan<SearchEngine> builtin_search_engines()
